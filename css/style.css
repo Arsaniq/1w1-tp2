@@ -186,7 +186,6 @@ th, td {
 .recherche{
     border: 2px solid #fff;
     display: inline-block;
-    position: absolute;
     top: 20px;
     left: 7rem;
 }
