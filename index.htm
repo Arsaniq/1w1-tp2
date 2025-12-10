@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiohead - TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- -------------------------------------------------------------------------------------------- Menu burger -->
+    <div class="navigation">
+        <label class="navigation__bouton" for="chk-burger">
+            <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000" width="32" height="32">
+        </label>
+        <input type="checkbox" id="chk-burger">
+        <nav class="navigation__menu">
+            <a href="#accueil">Accueil</a>
+            <a href="#tableau">Discographie</a>
+            <a href="#articles">Articles</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#video">Vidéos</a>
+            <a href="#inscription">Inscription</a>
+            <a href="#footer">Pied de page</a>
+        </nav>
+    </div>
+
+    <!-- Accueil -->
+    <section class="hero centre" id="accueil">
+        <form class="recherche">
+            <input class="recherche__input" type="search" placeholder="Rechercher">
+            <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=fff" width="20" height="20">
+        </form>
+        <header>
+            <h1>Radiohead</h1>
+            <h2>Auteur : Arsaniq Aubin Li</h2>
+            <p>Techniques d’intégration multimédia</p>
+            <p>Collège de Maisonneuve</p>
+            <p>Github Page : <a href="https://github.com/Arsaniq/gr2-1W1-tp2">Github</a>
+            <p>Automne 2025</p>
+            <a href="#inscription" class="btn-inscription">S'inscrire</a>
+        </header>
+    </section>
+
+    <!-- Tableau -->
+    <div>
+        <section class="un centre" id="tableau">
+            <h1>Discographie</h1>
+            <table>
+                <caption>Albums de Radiohead</caption>
+                <thead>
+                    <tr>
+                        <th>Année</th>
+                        <th>Album</th>
+                        <th>Label</th>
+                        <th>Hits principaux</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1993</td><td>Pablo Honey</td><td>EMI</td><td>Creep</td></tr>
+                    <tr><td>1995</td><td>The Bends</td><td>EMI</td><td>High and Dry</td></tr>
+                    <tr><td>1997</td><td>OK Computer</td><td>EMI</td><td>Paranoid Android</td></tr>
+                    <tr><td>2000</td><td>Kid A</td><td>EMI</td><td>Everything In Its Right Place</td></tr>
+                    <tr><td>2003</td><td>Hail to the Thief</td><td>EMI</td><td>There There</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="4">Fin de la discographie</td></tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+    <!-- Articles -->
+     <div>
+            <section class="deux centre" id="articles">
+                <h1>Articles</h1>
+                <div class="articles-container">
+                    <article>
+                        <h2>L’évolution du son de Radiohead</h2>
+                        <p>Depuis leurs débuts, Radiohead a toujours innové dans la musique alternative et électronique.</p>
+                        <img src="images/54d4e8abe6712fbbde1988e01e5f908d.jpg" width="100%">
+                    </article>
+                    <article>
+                        <h2>Influence et impact culturel</h2>
+                        <p>Radiohead a influencé de nombreux artistes modernes et reste un groupe culte de la musique alternative.</p>
+                        <img src="images/booth-shot1-scaled.jpg" width="100%">
+                    </article>
+                </div>
+            </section>
+    </div>
+    <!-- Galerie -->
+     <div>
+        <section class="trois centre" id="galerie">
+            <h1>Galerie</h1>
+            <div class="galerie-container">
+                <img src="images/cpr.jpg">
+                <img src="images/king of limb.webp" >
+                <img src="images/in rainbow.webp">
+                <img src="images/thief.webp">
+                <img src="images/oknotok.webp">
+                <img src="images/thief.webp">
+                <img src="images/radiohead-kid-a.jpeg">
+                <img src="images/amnesic.jpg">
+                <img src="images/karma police.webp">
+                <img src="images/paranoid android.webp">
+                <img src="images/moon shaped pool.jpg">
+                <img src="images/iro lung.jpg">
+            </div>
+        </section>
+    </div>
+    <!-- Vidéo -->
+     <div>
+        <section class="quatre centre" id="video">
+            <h1>Vidéos</h1>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=H2Nw8C14gBM" target="_blank">Creep</a></li>
+                <li><a href="https://youtu.be/n5h0qHwNrHk?si=CQtX-_wohY217966" target="_blank">Fake Plastic Trees</a></li>
+                <li><a href="https://www.youtube.com/watch?v=NoE4b5vnm3g" target="_blank">Karma Police</a></li>
+            </ul>
+        </section>
+    </div>
+    <!-- Inscription -->
+     <div>
+            <section class="six centre" id="inscription">
+                <h1>Inscription</h1>
+                <form class="formulaire">
+                    <fieldset>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" placeholder="Entrez votre nom">
+                    </fieldset>
+                    <fieldset>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" placeholder="Entrez votre prénom">
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Courriel</label>
+                        <input type="email" id="email" placeholder="Entrez votre courriel">
+                    </fieldset>
+                    <fieldset>
+                        <label for="mdp">Mot de passe</label>
+                        <input type="password" id="mdp" placeholder="Entrez un mot de passe">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Abonnement</legend>
+                        <label>Fan <input type="radio" name="abonnement"></label>
+                        <label>Super Fan <input type="radio" name="abonnement"></label>
+                        <label>VIP <input type="radio" name="abonnement"></label>
+                    </fieldset>
+                    <input type="submit" value="Valider">
+                    <input type="reset" value="Réinitialiser">
+                </form>
+            </section>
+    </div>
+    <!-- Pied de page -->
+     <div>
+        <footer class="cinq centre" id="footer">
+            <h1>Pied de page</h1> 
+            <p>Collège de Maisonneuve - 3800 Sherbrooke Est</p>
+            <p><a href="#">Lien important</a></p>
+            <p>Site consacré au groupe Radiohead</p>
+            <p>Réseaux sociaux : 
+                <a href="https://www.facebook.com/radiohead/"><img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=000" width="32" height="32"></a> | 
+                <a href="https://x.com/radiohead"><img src="https://s2.svgbox.net/social.svg?ic=twitter&color=000" width="32" height="32"></a> | 
+                <a href="https://www.instagram.com/radiohead/"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32"></a>
+            </p>
+            <p>Avis de confidentialité | Privacy Notice</p>
+            <p><a href="#accueil">Retour Accueil</a></p>
+        </footer>
+    </div>
+</body>
+</html>

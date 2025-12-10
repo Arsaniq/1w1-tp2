@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+section {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section, header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+}             
+
+h1,h2,h3{
+    margin: 0.5rem;
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+}
+
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;  
+}
+
+
+.centre{
+    margin: 0 auto;
+    max-width: 1100px;
+    background-color: #ffffff3f;
+    padding: 100px;
+}
+
+.hero{
+    background-position: 50%;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.hero >.centre {
+    background-color: #fffdfa59;
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////Couleurs des sections */
+
+#accueil { background-image:url(../images/22One-of-the-strangest-experiences22-The-psychedelic-video-game-Radiohead-made-for-PlayStation-Far-Out-Magazine-2.webp); color: #fff; }
+/*#tableau {background-color: #a3773d;   }
+#articles { background-color: #3c597e; }
+#galerie { background-color: #354d3a; }
+#video { background-color: #c9a541; }
+#inscription { background-color: #578896; }
+#footer { background-color: #773e3e;  }*/
+
+
+body > div:nth-of-type(2){
+    background-color: #a3773d;
+}
+
+body > div:nth-of-type(3){
+    background-color: #3c597e;
+}
+
+body > div:nth-of-type(4){
+    background-color: #354d3a;
+}
+
+body > div:nth-of-type(5){
+   background-color: #c9a541;
+}
+
+body > div:nth-of-type(6){
+   background-color: #578896;
+}
+
+body > div:nth-of-type(7){
+    background-color: #773e3e;
+} 
+
+
+/* ////////////////////////////////////////////////////////////Menu burger */
+#chk-burger { display: none; }
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.navigation__bouton {
+    background: none;
+    padding: 0;
+}
+.navigation__bouton img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+.navigation__menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease;
+    background-color: #000000bb;
+    text-align: center;
+}
+#chk-burger:checked ~ .navigation__menu {
+    max-height: 400px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.navigation__menu a {
+    display: block;
+    text-decoration: none;
+    background-color: #ffffff1e;
+    padding: 8px;
+    margin: 5px;
+    color: #fff;
+}
+
+/* //////////////////////////////////////////////////////////Formulaire */
+.formulaire fieldset {
+    margin: 10px 0;
+    border: 1px dotted #00000025;
+    padding: 10px;
+}
+.formulaire input[type="text"],
+.formulaire input[type="email"],
+.formulaire input[type="password"] {
+    width: 100%;
+    padding: 5px;
+}
+
+/* ///////////////////////////////////////////////////////////Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #fff;
+    padding: 8px;
+}
+
+/* ////////////////////////////////////////////////////////////Articles deux colonnes */
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.articles-container article {
+    width: 48%;
+}
+
+/* /////////////////////////////////////////////////////////////Galerie flexbox */
+.galerie-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.galerie-container img {
+    width: 150px;
+    margin: 5px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    transform: rotate(10deg);
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////Recherche */
+.recherche{
+    border: 2px solid #fff;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 7rem;
+}
+.recherche__input{
+    background-color: transparent;
+    border: none;
+    margin: 8px;
+    color: #fff;
+}
+.recherche__input:focus{ outline: none; }
+.recherche__img{ display: inline-block; }
+
+/*//////////////////////////////////////////////////////////////////// Bouton inscription */
+.btn-inscription {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
