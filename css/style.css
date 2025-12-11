@@ -80,7 +80,7 @@ body > div:nth-of-type(4){
 }
 
 body > div:nth-of-type(5){
-   background-color: #c9a541;
+ background-color: #773e3e ;
 }
 
 body > div:nth-of-type(6){
@@ -88,7 +88,7 @@ body > div:nth-of-type(6){
 }
 
 body > div:nth-of-type(7){
-    background-color: #773e3e;
+ background-color: #c9a541; 
 } 
 
 
@@ -207,5 +207,12 @@ th, td {
     color: #000;
     text-decoration: none;
     font-weight: bold;
+}
+
+
+/*  //////////////////////////////////////////////////////////////////////// video*/
+.video iframe{
+    display: inline-block;
+    margin: 20px;
 }
 
