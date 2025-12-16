@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"); 
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// Section recette */
+
+#recette{
+    font-family: 'Montserrat', sans-serif;  
+    padding: 100px ;                       
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////// Titres */
+
+#recette h1,
+#recette h2,
+#recette h3{
+    font-family: 'DynaPuff', cursive;      
+}
+#recette h1{
+    font-size: clamp(2.5rem, 5vw, 4rem);    
+    margin-bottom: 60px;                    
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// Articles recettes */
+
+
+.recette {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    margin-bottom: 60px;
+    flex-wrap: nowrap;
+}
+
+
+.recette__div {
+    min-width: 300px;
+    text-align: left;
+}
+
+
+.recette__image {
+    flex: 100px; 
+    display: flex;
+    align-items: center;
+    line-height: 1.8rem;
+}
+
+
+.recette:nth-of-type(odd) .recette__image {
+    order: -1;
+    justify-content: flex-start;
+}
+
+.recette:nth-of-type(even) .recette__image {
+    justify-content: flex-end;
+}
+
+
+.recette__figure{
+    display: inline-block;
+    border: 3px solid #6b6b6b92;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+
+.recette:nth-of-type(odd) .recette__figure{
+    transform: rotate(-5deg);
+}
+
+.recette:nth-of-type(even) .recette__figure{
+    transform: rotate(5deg);
+}
+
+
+.recette__img{
+    width: 260px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+.recette__figcaption{
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    background-color: #7a7a7a6b;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'DynaPuff';
+}
+
+
+/* ///////////////////////////////////////////////////////////// Home button*/ 
+.home-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.home-btn:hover{
+    filter: invert(42%) sepia(64%) saturate(350%) hue-rotate(190deg);
+    transform: scale(1.1);
+}

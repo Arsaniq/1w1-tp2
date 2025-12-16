@@ -12,7 +12,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
 section, header, footer{
     display: flex;
@@ -90,6 +90,11 @@ body > div:nth-of-type(6){
 body > div:nth-of-type(7){
  background-color: #c9a541; 
 } 
+
+body > div:nth-of-type(8){
+ background-color: #9b5989; 
+} 
+
 
 
 /* ////////////////////////////////////////////////////////////Menu burger */
